@@ -47,6 +47,9 @@ geth --rpc --rpcport "8545" --rpccorsdomain "*" --datadir node1 --port "30303" -
 ```
 geth --datadir node2 --port "30303" --nodiscover --networkid 1900 --nat "any" console
 ```
+```
+geth --datadir node3 --port "30303" --nodiscover --networkid 1900 --nat "any" console
+```
 ## Admin 
 ### Admin Info
 ```
@@ -80,7 +83,7 @@ admin.peers
 truffle compile
 ```
 ```
-personal.unlockAccount(eth.accounts[0])
+personal.unlockAccount(eth.accounts[0],"<password>","<duration>")
 ```
 ```
 truffle migrate
